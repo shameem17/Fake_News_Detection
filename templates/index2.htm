@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--Code by Divinector - divinectorweb.com-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animated background with pure css and html</title>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	
+		<div class="login">
+	<h1>Fake News  Detector</h1>
+
+    <form action="{{ url_for('predict')}}" method="POST">
+    	<textarea  name="message" rows="6" cols="50" required="required" style="font-size: 14pt"></textarea>
+		<br> </br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+        	<div class="results">
+    
+	{% if prediction == 'Fake'%}
+	<h2 style="color:red;">Fake News </h2>
+	{% elif prediction == 'True'%}
+				<h2 style="color:green;"><b>True News</b></h2>
+	{% endif %}
+
+	
+	</div>
+
+    </form>
+
+</div>
+
+	<div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
