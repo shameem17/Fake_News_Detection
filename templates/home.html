@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home|Fake News Detector</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>             
+     <section>
+     <header>
+    <div class="home-menu">
+          <div class="logo">
+               <a href="https://twitter.com/Shameem_22"><img src="{{ img1 }}"></a>
+               <a href="https://www.facebook.com/shameem.ahammed.94"><img src="{{ fbp }}"></a>
+               <a href="#"><img src="{{ inst }}"></a>
+          </div>
+     	<ul>
+     		<ul>
+     		<li class="active"><i class="fa fa-home"></i><a href="{{ url_for('home2') }}">Home</a></li>
+               <li><a href="{{ url_for('predt') }}"><i class="fa fa-clone"></i>Prediction</a></li>
+               <li ><a href="{{ url_for('about') }}"><i class="fa fa-user"></i>About</a></li>
+               <li><a href="{{ url_for('cont') }}"><i class="fa fa-phone"></i>Contact</a></li>
+     	</ul>
+     </div>
+
+     <div class="title">
+          <h1>Welcome To <br>Fake News Detector</h1>
+          <p>Defination of Fake news</p>
+          <h5></h5>
+        </div>
+  
+</header>
+</section>
+<section>
+     <footer>
+          <h5>Fake News Detector<br>Follow Us On</h5>
+          <div class="logo2">
+                <a href="https://twitter.com/Shameem_22"><img src="{{ img1 }}"></a>
+               <a href="https://www.facebook.com/shameem.ahammed.94"><img src="{{ fbp }}"></a>
+               <a href="#"><img src="{{ inst }}"></a>
+          </div>
+          <h5><span>&copy</span>Copyright 2021-2022 <br> Shameem Ahammed</h5>
+     </footer>
+     
+</section>
+</body>
+</html>
