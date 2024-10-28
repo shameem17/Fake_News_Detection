@@ -1,4 +1,7 @@
-## Fake news detector
+## 💥Fake news detector
+
+
+
 web application
 To open this flask project, your local machine must have Python installed.
 check whether you already have Python by the command:
